@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     async function fetchWeatherData(city) {
-        const apiKey = "9f038218d6a951e39745c1b7dd409c9e"; 
+        const apiKey = "YOUR-KEY-OPENWEATHER"; 
         const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&units=metric&appid=${apiKey}`);
         if (!response.ok) {
             throw new Error(`Erro na requisição: ${response.statusText}`);
